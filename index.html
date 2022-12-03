@@ -4,206 +4,142 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./dist/output.css" />
     <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./images/favicon-32x32.png"
-    />
-    <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /> -->
+    rel="icon"
+    type="image/png"
+    sizes="32x32"
+    href="./images/favicon-32x32.png"
+  />
     <link
       href="https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:ital,wght@0,100;0,300;0,400;0,500;1,300;1,500;1,600&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,400&family=Lobster&family=Lobster+Two:wght@400;700&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,900&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./images/style.css" />
     <script
       src="https://kit.fontawesome.com/aa5bc2ed98.js"
       crossorigin="anonymous"
     ></script>
-    <style>
-         * {
-          margin: 0;
-          padding: 0;
-          box-sizing: border-box !important;
-        }
-        aside {
-          font-family: "Alata", sans-serif;
-        }
-        main{
-          font-family: "Josefin Sans", sans-serif;
-        }
-        header {
-          font-family: "Alata", sans-serif;
-          background-image: url(./images/mobile/image-hero.jpg);
-        }
-        
-        @media screen and (min-width: 768px) {
-          header {
-            background-image: url(./images/desktop/image-hero.jpg);
-          }
-        }
-        .attribution {
-          font-size: 11px;
-          text-align: center;
-        }
-        .attribution a {
-          color: hsl(228, 45%, 44%);
-        }
-          .deep-earth{
-            /* background-repeat: no-repeat !important;
-          border: 1px solid red !important;
-          background-size:cover !important; */
-          background: url(./images/mobile/image-deep-earth.jpg);
-        }
-        .night-arcade{
-          /* background-repeat: no-repeat !important;
-          border: 1px solid red !important;
-          background-size: cover !important; */
-          background: url(./images/mobile/image-night-arcade.jpg);
-        }
-        .soccer-team{
-          /* background-repeat: no-repeat !important;
-          border: 1px solid red !important;
-          background-size: cover !important; */
-          background: url(./images/mobile/image-soccer-team.jpg);
-        }
-        .the-grid{
-          /* background-repeat: no-repeat !important;
-          border: 1px solid red !important;
-          background-size: cover !important; */
-          background: url(./images/mobile/image-grid.jpg);
-        }
-        .above{
-          /* background-repeat: no-repeat !important;
-          border: 1px solid red !important;
-          background-size: cover !important; */
-          background: url(./images/mobile/image-from-above.jpg);
-        }
-        .pocket{
-          /* background-repeat: no-repeat !important;
-          border: 1px solid red !important;
-          background-size:cover !important; */
-          background: url(./images/mobile/image-pocket-borealis.jpg);
-        }
-        .curiosity{
-          /* background-repeat: no-repeat !important;
-          border: 1px solid red !important;
-          background-size: cover !important; */
-          background: url(./images/mobile/image-curiosity.jpg);
-        }
-        .fisheye{
-          /* background-repeat: no-repeat !important;
-          border: 1px solid red !important;
-          background-size: cover !important; */
-          background: url(./images/mobile/image-fisheye.jpg);
-        }
-    </style>
-   
-    <title>Document</title>
+    <title>Frontend Mentor | Loopstudios landing page</title>
+    <style></style>
   </head>
   <body>
-    <header class="pt-2 pb-40 text-white bg-no-repeat bg-cover bg-center w-full md:h-auto">
-        <nav
-          class="mx-6 md:mx-14 md:flex justify-between items-center fixed w-11/12"
-        >
-          <h1 class="w-1/2 font-semibold text-2xl">loopstudios</h1>
-          <ul class="capitalize flex md:flex-row justify-between flex-col md:w-1/2  bg-black md:mt-0 mt-20 md:bg-inherit opacity-0">
-            <li class="mb-4 md:mb-0"><a href="#">about</a></li>
-            <li class="mb-4 md:mb-0"><a href="#">career</a></li>
-            <li class="mb-4 md:mb-0 "><a href="#">events</a></li>
-            <li class="mb-4 md:mb-0"><a href="#">products</a></li>
-            <li class="mb-4 md:mb-0"><a href="#">supports</a></li>
+    <header>
+      <div class="container">
+        <nav>
+          <h1>loopstudios</h1>
+          <ul>
+            <li><a href="#aboutUs">about</a></li>
+            <li><a href="#">careers</a></li>
+            <li><a href="#">events</a></li>
+            <li><a href="#product">products</a></li>
+            <li><a href="#">supports</a></li>
           </ul>
+          <div class="btn">
+            <i class="fa-solid fa-bars menu"></i>
+          </div>
         </nav>
-        <main
-          class="mx-6 md:mx-14 mt-40 md:text-6xl text-6xl uppercase border p-4 max-w-lg"
-        >
+        <main>
           <h3 class="">immersive experiences that deliver</h3>
         </main>
-      </header>
-      <section class="flex justify-center items-center flex-col md:flex-row">
-        <img src="./images/desktop/image-interactive.jpg" alt="" class="hidden" />
-        <img
-          src="./images/mobile/image-interactive.jpg"
-          alt=""
-          class="mt-20 w-11/12 max-w-md"
-        />
-        <aside class="max-w-md">
-          <h2 class="my-6 uppercase text-4xl font-thin text-black text-center">
-            The leader in interactive VR
+      </div>
+    </header>
+    <section class="container" id="aboutUs">
+      <img src="./images/desktop/image-interactive.jpg" alt="image-interactive" />
+      <img class="mobile-image" src="./images/mobile/image-interactive.jpg" alt="image-interactive" />
+      <aside>
+        <h2>The leader in interactive VR</h2>
+        <p>
+          Founded in 2011, Loopstudios has been producing world-class virtual
+          reality projects for some of the best companies around the globe. Our
+          award-winning creations have transformed businesses through digital
+          experiences that bind to their brand.
+        </p>
+      </aside>
+    </section>
+    <section class="collections container" id="product">
+      <h1>Our creations</h1>
+      <div class="collections-container">
+        <div class="deep-earth">
+          <h2>
+            Deep <br />
+            earth
           </h2>
-          <p class="mx-6 text-center font-medium text-2xl text-gray-800">
-            Founded in 2011, Loopstudios has been producing world-class virtual
-            reality projects for some of the best companies around the globe. Our
-            award-winning creations have transformed businesses through digital
-            experiences that bind to their brand.
-          </p>
-        </aside>
-      </section>
-      <section class="mx-6 text-white">
-        <h2 class="text-black uppercase text-center text-4xl my-10">Our creations</h2>
-          <div class="grid md:grid-cols-4 gap-10">
-            <div class="h-48 pl-5 mb-8 deep-earth bg-center bg-cover bg-no-repeat">
-              <h2 class="uppercase  text-3xl mt-16">Deep <br> earth</h2>
-            </div>
-            <div class="h-48 pl-5 mb-8 night-arcade bg-cover  bg-no-repeat">
-              <h2 class="uppercase text-3xl mt-16">night <br> arcade</h2>
-            </div>
-            <div class="h-48 pl-5 mb-8 soccer-team bg-center bg-cover  bg-no-repeat">
-              <h2 class="uppercase text-3xl mt-16">soccer <br> team vr</h2>
-            </div>
-            <div class="h-48 pl-5 mb-8 the-grid bg-center bg-cover  bg-no-repeat">
-              <h2 class="uppercase text-3xl mt-16 ">the <br> grid</h2>
-            </div>
-            <div class="h-48 pl-5 mb-8 above bg-center bg-cover  bg-no-repeat">
-              <h2 class="uppercase text-3xl mt-16">
-                from up <br />
-                above vr
-              </h2>
-            </div>
-            <div class="h-48 pl-5 mb-8 pocket bg-center bg-cover  bg-no-repeat">
-              <h2 class="uppercase text-3xl mt-16">pocket <br> borealis</h2>
-            </div>
-            <div class="h-48 pl-5 mb-8 curiosity bg-center bg-cover  bg-no-repeat">
-              <h2 class="uppercase text-3xl mt-16">the <br> curiosity</h2>
-            </div>
-            <div class="h-48 pl-5 mb-3 fisheye bg-center bg-cover  bg-no-repeat">
-              <h2 class="uppercase text-3xl mt-16">make it <br> fisheye</h2>
-            </div>
-            <div class="flex justify-center">
-          </div>      
-          <button class="uppercase text-2xl border px-14 py-3 border-gray-600 text-black">
-            see all
-          </button>
         </div>
-      </section>
-      <footer
-        class="flex flex-col justify-center items-center bg-black mt-10 pt-10 pb-3 text-white text-center"
-      >
-        <h2 class="text-2xl mb-4">loopstudios</h2>
-        <ul class="capitalize flex justify-between flex-col text-xl font-light">
-          <li class="mb-4"><a href="#">about</a></li>
-          <li class="mb-4"><a href="#">career</a></li>
-          <li class="mb-4"><a href="#">events</a></li>
-          <li class="mb-4"><a href="#">products</a></li>
-          <li class="mb-4"><a href="#">supports</a></li>
-        </ul>
-        <div class="flex justify-evenly items-center w-1/3 text-xlg mb-4">
+        <div class="night-arcade">
+          <h2>
+            night <br />
+            arcade
+          </h2>
+        </div>
+        <div class="soccer-team">
+          <h2>
+            soccer <br />
+            team vr
+          </h2>
+        </div>
+        <div class="the-grid">
+          <h2>
+            the <br />
+            grid
+          </h2>
+        </div>
+        <div class="above">
+          <h2>
+            from up <br />
+            above vr
+          </h2>
+        </div>
+        <div class="pocket">
+          <h2>
+            pocket <br />
+            borealis
+          </h2>
+        </div>
+        <div class="curiosity">
+          <h2>
+            the <br />
+            curiosity
+          </h2>
+        </div>
+        <div class="fisheye">
+          <h2>
+            make it <br />
+            fisheye
+          </h2>
+        </div>
+        <button>see all</button>
+      </div>
+    </section>
+    <footer>
+      <div class="footer_container container">
+        <div class="footer_left">
+          <h2>loopstudios</h2>
+          <ul>
+            <li><a href="#">about</a></li>
+            <li><a href="#">career</a></li>
+            <li><a href="#">events</a></li>
+            <li><a href="#">products</a></li>
+            <li><a href="#">supports</a></li>
+          </ul>
+        </div>
+       <div class="footer_right">
+        <div class="social">
           <i class="fa-brands fa-facebook"></i>
           <i class="fa-brands fa-twitter"></i>
           <i class="fa-brands fa-pinterest"></i>
           <i class="fa-brands fa-instagram"></i>
         </div>
         <p>© 2021 Loopstudios. All rights reserved.</p>
-        <p>
-          Challenge by
-          <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-            >Frontend Mentor</a
-          >. Coded by <a href="#">Yunusabdul</a>.
-        </p>
-      </footer>
-  
-      <script src="./script.js"></script>
+       </div>
+      </div>
+      <p>
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="https://yunusabdul-profile.netlify.app">Yunusabdul</a>.
+      </p>
+    </footer>
+
+    <script src="./images/script.js"></script>
   </body>
 </html>

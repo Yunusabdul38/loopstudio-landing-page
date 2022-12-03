@@ -1,0 +1,394 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* fonts */
+    --alata-font: "Alata", sans-serif;
+    --josefin-font:"Josefin Sans", sans-serif;
+    --josefin-fontWeight:300;
+    --alata-fontWeight:400;
+    /* colors */
+    --white: hsl(0, 0%, 100%);
+    --black:hsl(0, 0%, 0%);
+    --dark-gray:hsl(0, 0%, 55%);
+    --very-dak-gray:hsl(0, 0%, 41%);
+  }
+  body{
+    position: relative;
+  }
+
+  /* color */
+  header,li, nav h1,a,header .btn ,
+
+  .collections-container{
+    color: var(--white);
+  }
+  aside h2{
+    color:var(--black) ;
+  }
+  aside p{
+    color: var(--very-dak-gray);
+  }
+
+  /* font */
+  main, aside h2,
+  .collections h1,
+  .collections div h2{
+    font-family: var(--josefin-font);
+    font-weight: var(--josefin-fontWeight);
+  }
+  body, aside,
+  footer ul li{
+    font-family: var(--alata-font);
+    font-weight: var(--alata-font);
+  }
+
+  .container{
+    width: 95%;
+    margin: 0 auto;
+  }
+  header {
+    padding-top: 1.2em;
+    background: url(../images/mobile/image-hero.jpg) no-repeat center;
+    background-size: cover;
+    padding-bottom: 8em;
+  }
+  nav{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    justify-content: space-between;
+  }
+  header h1{
+    z-index: 1;
+  }
+  nav ul{
+    margin-block-start: 10px;
+    line-height: 1.3em;
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+    list-style: none;
+    font-size: 1.2em;
+  }
+  a{
+    text-decoration: none;
+  }
+  main{
+    margin-top: 8em;
+    border: 1px solid var(--white);
+    width: 100%;
+    max-width: 500px;
+    padding: 10px;
+    text-transform: uppercase;
+   
+  }
+  main h3{
+    font-size: 3.6em;
+  }
+  section img:first-child{
+    display: none;
+  }
+  section img{
+    margin-block: 5em 2em;
+    width: 100%;
+  }
+  aside h2{
+    text-transform: uppercase;
+    margin-block-end: .5em;
+   
+  }
+  section aside{
+    margin-inline: 1.5em;
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 2em;
+  }
+  .collections h1 {
+    text-align: center;
+    text-transform: uppercase;
+  }
+  .collections-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .collections div h2{
+    position: absolute;
+    bottom: 40px;
+    font-size: 1.8em;
+    padding-left: 10px;
+    text-transform: uppercase;
+  }
+  .collections button{
+    text-transform: uppercase;
+    padding: 10px 25px;
+    width: 50%;
+    max-width: 300px;
+    background-color: var(--white);
+    letter-spacing: 6px;
+    border: black 1px solid;
+  }
+  .deep-earth{
+    background: url(../images/mobile/image-deep-earth.jpg);
+  }
+  .night-arcade{
+    background: url(../images/mobile/image-night-arcade.jpg);
+  }
+  .soccer-team{
+    background: url(../images/mobile/image-soccer-team.jpg);
+  }
+  .the-grid{
+    background: url(../images/mobile/image-grid.jpg);
+  }
+  .above{
+    background: url(../images/mobile/image-from-above.jpg);
+  }
+  .pocket{
+    background: url(../images/mobile/image-pocket-borealis.jpg);
+  }
+  .curiosity{
+    background: url(../images/mobile/image-curiosity.jpg);
+  }
+  .fisheye{
+    background: url(../images/mobile/image-fisheye.jpg);
+  }
+  .deep-earth,
+  .night-arcade,
+  .soccer-team,
+  .the-grid,
+  .above,
+  .pocket,
+  .curiosity,
+  .fisheye{
+    position: relative;
+    width: 100%;
+    height: 220px;
+    margin-block: .4em;
+    max-width: 560px;
+  }
+  .collections-container div{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  header .btn {
+    position: absolute;
+    right: 4%;
+    font-size: 2rem;
+  }
+  footer{
+    padding: 20px 0;
+    text-align: center;
+  }
+  footer, footer ul{
+    display: flex;
+    margin-top: 2em;
+    list-style: none;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    color: white;
+  }
+  footer ul li{
+    text-transform: capitalize;
+    font-size: 1.2em;
+    font-weight: 300;
+    line-height: 2em;
+  }
+  footer .social{
+    margin: 20px 0;
+  }
+  .social i {
+    font-size: 1.5em;
+    margin-left: 10px;
+  } 
+  @media screen and (max-width: 20em){
+    header main h3,#aboutUs aside h2{
+      font-size: 1.5em ;
+    }
+    #aboutUs aside{
+      font-size: 1.1em;
+    }
+  }
+  @media screen and (min-width: 20.1em) and (max-width:39.8em){
+   header main h3{
+    font-size: 2.4em;
+   }
+  }
+  @media screen and (max-width: 39.9em){
+    nav ul{
+      display: none;
+    }
+    nav .hight {
+    display: block !important;  
+    background-color: var(--black);
+    width: 100%;
+    padding:2em 0 0 1em;
+    height: 300px;
+    top: -10px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 2em;
+    }
+    aside h2{
+      font-size: 1.5em;
+    }
+  }
+  @media screen and (min-width: 40em) and (max-width:60em){
+    #aboutUs aside{
+      padding: 2em ;
+      margin-top: 140px;
+      height: 260px;
+      font-size: 1.2em ;
+    }
+    .collections div h2{
+      font-size: 1.3em;
+    }
+    ul li{
+      font-size: 13px;
+      padding-right: 20px;
+    }
+  }
+ 
+  @media screen and (min-width: 40em) {
+    header {
+      justify-content: space-between;
+      background-image: url(../images/desktop/image-hero.jpg);
+    }
+    .container{
+      width: 90%;
+    }
+    #aboutUs{
+      display: flex;
+      position: relative;
+    }
+    section img{
+      width: 50%;
+      min-width: 400px;
+      max-width: 500px;
+      min-height: 320px;
+    }
+    header nav h1{
+      width: 30%;
+    }
+    header nav ul{
+      font-size: 1em;
+      width: 60%;
+    }
+    header nav li{
+      width: 10%;
+    }
+    #aboutUs aside h2{
+      font-size: 1.6em;
+    }
+    section aside{
+      height: auto;
+      min-height:250px;
+      max-height: 350px;
+      position: absolute;
+      margin-left: 30%;
+      margin-top: 120px;
+      width: 70%;
+      max-width: 620px;
+      text-align: start;
+      padding: 2em;
+      font-size: 1.5em;
+      background-color:var(--white);
+    }
+    header .btn{
+      display: none;
+    }
+    nav,nav ul{
+      transition: none;
+      justify-content: space-between;
+      flex-direction: row;
+    }
+    section img:first-child{
+      display: block;
+      
+    }
+    .mobile-image{
+      display: none;
+    }
+    .collections-container{
+      display: grid;
+      grid-template-rows: repeat(2,);
+      grid-template-columns: repeat(4,1fr);
+      grid-column-gap: 4%;
+    }
+    .collections{
+      position: relative;
+    }
+    .collections h1{
+      margin-block: 1.2em;
+      text-align: start;
+    }
+    .collections button{
+      position: absolute;
+      width: auto;
+      top: 0;
+      right: 10px;
+    }
+    .deep-earth{
+      background: url(../images/desktop/image-deep-earth.jpg) ;
+    }
+    .night-arcade{
+      background: url(../images/desktop/image-night-arcade.jpg);
+    }
+    .soccer-team{
+      background: url(../images/desktop/image-soccer-team.jpg);
+    }
+    .the-grid{
+      background: url(../images/desktop/image-grid.jpg);
+    }
+    .above{
+      background: url(../images/desktop/image-from-above.jpg);
+    }
+    .pocket{
+      background: url(../images/desktop/image-pocket-borealis.jpg);
+    }
+    .curiosity{
+      background: url(../images/desktop/image-curiosity.jpg);
+    }
+    .fisheye{
+      background: url(../images/desktop/image-fisheye.jpg);
+    }
+     .night-arcade,
+    .soccer-team,
+    .the-grid,
+    .above,
+    .pocket,
+    .curiosity,
+    .deep-earth,
+    .fisheye{
+        height: 450px;
+    }
+    .footer_container{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    footer .footer_left{
+      text-align: start;
+      width: 50%;
+    }
+    footer ul{
+      margin-top: 0;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    footer ul li{
+      width: 1%;
+    }
+    footer .footer_left .social{
+      margin: 0 ;
+    }
+    footer .footer_right{
+      text-align: end;
+      width: 40%;
+    }
+  }
